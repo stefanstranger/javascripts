@@ -1,0 +1,14 @@
+ {
+  "name": "junk",
+  "version": "1.0.0",
+  "description": "\"Junk project\"",
+  "main": "server.js",
+  "scripts": {
+    "start": "node .\\coding.js"
+  },
+  "keywords": [
+    "junk"
+  ],
+  "author": "Stefan Stranger",
+  "license": "ISC"
+}
