@@ -1,0 +1,14 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "\"Test scripts\"",
+  "main": "function.js",
+  "scripts": {
+    "test": "node .\\function.js"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Stefan Stranger",
+  "license": "ISC"
+}
