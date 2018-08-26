@@ -1,4 +1,18 @@
-var isMomHappy = false;
+var prompt = require('prompt');
+
+prompt.start();
+
+prompt.get(['Is Mom Happy'], function (err, result) {
+    if (err) { return onErr(err); }
+    console.log('Command-line input received:');
+    console.log('  isMomHappy: ' + result.isMomHappy);
+    var isMomHappy = result.isMomHappy;
+});
+
+function onErr(err) {
+    console.log(err);
+    return 1;
+}
 
 //Promise
 var willIGetNewPhone = new Promise(
@@ -24,7 +38,7 @@ var showOff = function (phone) {
 
 // call our Promise
 var askMom = function () {
-    //console.log('before asking Mom');
+    console.log('before asking Mom');
     willIGetNewPhone
     .then(showOff) // Chain 2nd Promise
     .then(function (fullfilled){

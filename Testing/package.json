@@ -10,5 +10,8 @@
     "test"
   ],
   "author": "Stefan Stranger",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
 }
